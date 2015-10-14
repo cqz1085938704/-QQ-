@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2i0-DR-olp" customClass="SliderBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLE-eO-KEv">
+                    <rect key="frame" x="15" y="10" width="57" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="57" id="hq8-Sg-zVd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="设置">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTM-xg-sRk">
+                    <rect key="frame" x="87" y="10" width="68" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="Cgd-ZC-zI4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="夜间">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fTM-xg-sRk" firstAttribute="leading" secondItem="TLE-eO-KEv" secondAttribute="trailing" constant="15" id="0Is-JV-EXn"/>
+                <constraint firstAttribute="centerY" secondItem="fTM-xg-sRk" secondAttribute="centerY" id="6U2-Cg-gql"/>
+                <constraint firstAttribute="bottom" secondItem="TLE-eO-KEv" secondAttribute="bottom" constant="10" id="F9j-qE-q93"/>
+                <constraint firstItem="fTM-xg-sRk" firstAttribute="top" secondItem="2i0-DR-olp" secondAttribute="top" constant="10" id="MuY-f5-maJ"/>
+                <constraint firstItem="TLE-eO-KEv" firstAttribute="top" secondItem="2i0-DR-olp" secondAttribute="top" constant="10" id="Pf7-DV-EYI"/>
+                <constraint firstItem="TLE-eO-KEv" firstAttribute="leading" secondItem="2i0-DR-olp" secondAttribute="leading" constant="15" id="XGP-Mo-Vel"/>
+                <constraint firstAttribute="bottom" secondItem="fTM-xg-sRk" secondAttribute="bottom" constant="10" id="hw7-Ff-F2i"/>
+                <constraint firstAttribute="centerY" secondItem="TLE-eO-KEv" secondAttribute="centerY" id="vet-JZ-9o2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="290" y="78"/>
+        </view>
+    </objects>
+</document>
